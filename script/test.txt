@@ -1,1 +1,76 @@
+Test Case : CART-11
+Test Name : 장바구니 담기 Alert 확인
+
+테스트 목적
+상품 상세 페이지에서 [장바구니에 담기] 버튼 클릭 시
+장바구니 담기 완료 Alert이 정상적으로 노출되는지 확인한다.
+
+테스트 과정
+1. 코코지몰 접속
+2. 상품 클릭
+3. 상품 상세 페이지 진입
+4. [장바구니에 담기] 버튼 클릭
+5. 장바구니 담기 Alert 노출 확인
+6. Alert 내 버튼 확인
+
+테스트 결과
+
+Step 5 결과
+
+PASS (성공)
+"장바구니에 담았습니다!" Alert 메시지가 정상적으로 노출된다.
+
+FAIL (실패)
+Alert 메시지가 노출되지 않거나, 메시지 내용이 요구사항과 다르게 표시된다.
+
+
+Step 6 결과
+
+PASS (성공)
+Alert 내 다음 두 개의 버튼이 정상적으로 표시된다.
+
+- 쇼핑 계속하기
+- 장바구니로 이동
+
+FAIL (실패)
+Alert 버튼이 표시되지 않거나 클릭이 불가능하다.
+
+
+
+아래 내용은 Playwright 구조를 참고하여 작성한 자동화 흐름 예시이며
+실제 실행 가능한 스크립트가 아닌 개념적인 예시를 작성하였습니다.
+
+The following pseudo flow describes how the test could be automated using a Playwright-like structure.
+
+Pseudo Automation Flow (Playwright style)
+
+1. Open kokozi mall website
+   → navigate to https://kokozi.com
+
+2. Select a product from product list
+   → click product item
+
+3. Move to product detail page
+
+4. Click [Add to Cart] button
+
+5. Verify alert message appears
+   → "장바구니에 담았습니다!"
+
+   PASS
+   Alert message "장바구니에 담았습니다!" is displayed correctly.
+
+   FAIL
+   Alert message does not appear or the displayed message is different.
+
+
+6. Verify alert buttons
+   → Continue Shopping
+   → Go to Cart
+
+   PASS
+   Both buttons are displayed correctly in the alert.
+
+   FAIL
+   One or more buttons are missing or not clickable.
 
